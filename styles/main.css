@@ -1,0 +1,23 @@
+.header img{
+    margin: 0px 0px 0px 100px ;
+}
+
+.main-photo img{
+  max-width: 1500px;
+}
+
+nav {
+  float: right;
+  margin: 150px 100px 0px 0px;
+  font-family: "Acumin-Pro";
+}
+
+nav a {
+  padding: 50px;
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Acumin-Pro", serif;
+}
