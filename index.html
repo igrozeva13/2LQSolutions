@@ -4,11 +4,114 @@
   <title>Portfolio Website</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,700" rel="stylesheet" type="text/css">
+  <script src="https://use.typekit.net/cdu5ael.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script type="text/javascript">
+        $(document).ready(function(){
+           // set up hover panels
+           // although this can be done without JavaScript, we've attached these events
+          // because it causes the hover to be triggered when the element is tapped on a touch device
+        $('.hover').hover(function(){
+            $(this).addClass('flip');
+        },function(){
+            $(this).removeClass('flip');
+        });
+    });
+    </script>
 </head>
 <body>
+<div class="header">
+  <img src="img/logos/2LQlogo.png" height="220">
+  <nav class="main">
+    <a href="#about">ABOUT US</a>
+    <a href="#contact">CONTACT US</a>
+  </nav>
+</div>
 
+<div class="main-photo container-fluid">
+  <img src="img/photos/table copy.jpg">
+</div>
+
+<a name="about"></a>
+<div class="about us container">
+  <h1>
+    ABOUT US
+  </h1>
+  <p>
+    For more than a decade our team has been working in the staffing industry and with various federal agencies. Our experience from deployments, working with and for staffing companies, and on government projects has given us the tools we need to provide the best solutions for your projects. Our solutions help our clients by reducing overhead, improving productivity, and ensuring compliance by focusing on our three principles: a quality workforce, a relentless pursuit to completion, and a passion for innovation.
+  </p>
+
+<div class="container">
+  <div class="row">
+    <section class="col-md-4 block">
+  <div id="f1_container">
+  <div id="f1_card">
+    <div class="front face">
+      <img src="img/photos/whoweare.jpg"/>
+    </div>
+    <div class="back face center">
+      <img src="img/photos/hover_box_1.jpg"/>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="col-md-4 block">
+  <div id="f1_container">
+  <div id="f1_card">
+    <div class="front face">
+      <img src="img/photos/whatwedo.jpg"/>
+    </div>
+    <div class="back face center">
+      <img src="img/photos/hover_box_2.jpg"/>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="col-md-4 block">
+  <div id="f1_container">
+  <div id="f1_card">
+    <div class="front face">
+      <img src="img/photos/ourmission.jpg"/>
+    </div>
+    <div class="back face center">
+      <img src="img/photos/hover_box_3.jpg"/>
+    </div>
+  </div>
+  </div>
+</section>
+
+</div>
+</div>
+</div>
+
+<a name="contact"></a>
+<div class="contact">
+  <h1>
+    CONTACT US
+  </h1>
+  <div class="contact-info">
+    <div class="row first-row">
+      <section class="col-md-6">
+        <img src="img/icons/icons-04-01.png">
+        <h2>How can we help?</h2>
+        <p>We'd love to hear from you. <br><br>Give us a call. <br><br><strong>864-202-4077<strong></p>
+      </section>
+      <section class="col-md-6">
+        <img src="img/icons/icons-03-01.png">
+        <h2>Have any questions?</h2>
+        <p>We value your opinion. <br><br>Shoot us an email. <br><br><strong><a href="mailto:info@2LQsolutions.com">info@2LQSolutions.com</a></strong></p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p class="copyright">&copy; 2016 2LQ Solutions Ltd. Co.</p>
+</div>
 </body>
+
 
 </html>

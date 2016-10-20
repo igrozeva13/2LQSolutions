@@ -1,0 +1,193 @@
+
+/* ------------- Header -------------*/
+.header img{
+    margin-left: 15%;
+}
+
+@media only screen and (min-width: 2001px) {
+
+.main-photo img{
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-photo {
+  background-color: #dcd8d0;
+}
+}
+
+@media only screen and (max-width: 2000px) {
+
+.main-photo img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-photo {
+  background-color: #dcd8d0;
+}
+}
+
+/* ------------- Navigation -------------*/
+nav {
+  float: right;
+  margin-top: 100px;
+  margin-right: 15%;
+}
+
+nav a {
+  padding: 50px;
+  text-decoration: none;
+  font-family: "acumin-pro",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #58585a;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #274178;
+  font-family: "acumin-pro",sans-serif;
+  font-weight: 500;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color: #58585a;
+  font-family: "acumin-pro",sans-serif;
+  font-weight: 300;
+}
+
+nav a:active {
+  text-decoration: none;
+}
+
+/* ------------- Body -------------*/
+p {
+  font-size: 18px;
+  font-family: "acumin-pro",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  text-align: center;
+  max-width: 1600px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+
+h1 {
+  font-family: "acumin-pro",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 50px 50px 0px 50px;
+}
+
+/* ------------- Flip Cards -------------*/
+
+.front img{
+  max-width: 300px;
+  padding-bottom: 80px;
+}
+
+.back img{
+  max-width: 300px;
+  padding-bottom: 80px;
+}
+
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  margin-left: 20px;
+  width: 450px;
+  height: 300px;
+  z-index: 1;
+}
+
+#f1_container {
+  perspective: 1000;
+}
+
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.6s linear;
+}
+
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.face.back {
+  transform: rotateY(180deg);
+}
+
+div .container {
+  margin-bottom: 150px;
+}
+
+/* ------------- Contact -------------*/
+
+@media only screen and (min-width: 1401px) {
+.contact {
+  background-color: #dcd8d0;
+  padding-left: 30%;
+  padding-right: 30%;
+}}
+
+@media only screen and (max-width: 1400px) {
+.contact {
+  background-color: #dcd8d0;
+}}
+
+.contact h2 {
+  font-family: "acumin-pro",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contact img {
+  max-width: 50px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.contact-info {
+
+}
+
+.first-row {
+  padding-bottom: 20px;
+}
+
+/* ------------- Footer -------------*/
+
+.footer {
+  background-color: #274178;
+  position: absolute;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 12px;
+  color: white;
+  text-align: left;
+
+}
