@@ -1,9 +1,13 @@
+
+/* ------------- Header -------------*/
 .header img{
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
+@media only screen and (min-width: 2001px) {
+
 .main-photo img{
-  max-width: 60%;
+  max-width: 70%;
   display: block;
   margin: 0 auto;
 }
@@ -11,11 +15,26 @@
 .main-photo {
   background-color: #dcd8d0;
 }
+}
 
+@media only screen and (max-width: 2000px) {
+
+.main-photo img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-photo {
+  background-color: #dcd8d0;
+}
+}
+
+/* ------------- Navigation -------------*/
 nav {
   float: right;
-  margin-top: 150px;
-  margin-right: 10%;
+  margin-top: 100px;
+  margin-right: 15%;
 }
 
 nav a {
@@ -46,6 +65,7 @@ nav a:active {
   text-decoration: none;
 }
 
+/* ------------- Body -------------*/
 p {
   font-size: 18px;
   font-family: "acumin-pro",sans-serif;
@@ -57,9 +77,6 @@ p {
   margin-bottom: 50px;
 }
 
-div .info-block {
-  padding: 30px;
-}
 
 h1 {
   font-family: "acumin-pro",sans-serif;
@@ -71,18 +88,71 @@ h1 {
   padding: 50px 50px 0px 50px;
 }
 
-.info-block {
-  margin: 20px;
-}
+/* ------------- Flip Cards -------------*/
 
-.info-blocks img{
+.front img{
   max-width: 300px;
   padding-bottom: 80px;
 }
 
+.back img{
+  max-width: 300px;
+  padding-bottom: 80px;
+}
+
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  margin-left: 20px;
+  width: 450px;
+  height: 300px;
+  z-index: 1;
+}
+
+#f1_container {
+  perspective: 1000;
+}
+
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.6s linear;
+}
+
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.face.back {
+  transform: rotateY(180deg);
+}
+
+div .container {
+  margin-bottom: 150px;
+}
+
+/* ------------- Contact -------------*/
+
+@media only screen and (min-width: 1401px) {
 .contact {
   background-color: #dcd8d0;
-}
+  padding-left: 30%;
+  padding-right: 30%;
+}}
+
+@media only screen and (max-width: 1400px) {
+.contact {
+  background-color: #dcd8d0;
+}}
 
 .contact h2 {
   font-family: "acumin-pro",sans-serif;
@@ -99,10 +169,25 @@ h1 {
   padding: 20px 0px 20px 0px;
 }
 
-.first-row {
-  padding-bottom: 100px;
+.contact-info {
+
 }
+
+.first-row {
+  padding-bottom: 20px;
+}
+
+/* ------------- Footer -------------*/
 
 .footer {
   background-color: #274178;
+  position: absolute;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 12px;
+  color: white;
+  text-align: left;
+
 }
